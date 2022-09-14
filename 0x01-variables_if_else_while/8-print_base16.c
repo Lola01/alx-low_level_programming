@@ -5,7 +5,7 @@
  *
  * Return: Always (successful)
  */
-in main(void)
+int main(void)
 {
 	char c;
 
