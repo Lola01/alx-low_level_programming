@@ -3,7 +3,7 @@
 /**
  * main - Prints all the letters in lowercase except q and e
  *
- * Return; Always (Successful)
+ * Return: Always (Successful)
  */
 int main(void)
 {
