@@ -3,6 +3,7 @@
 /**
  * puts_half - function that prints half of a string
  * @str: This is the input string
+ * Return: void
  */
 void puts_half(char *str)
 {
@@ -16,7 +17,7 @@ void puts_half(char *str)
 	if (index % 2 == 1)
 		half++;
 
-	whiel (half < index)
+	while (half < index)
 	{
 		_putchar(str[half]);
 		half++;
