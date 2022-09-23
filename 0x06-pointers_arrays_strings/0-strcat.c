@@ -5,12 +5,12 @@
  * strcat - a function that concatenates two strings
  * @dest: the destination string
  * @src: the source string
- *
  * Return: Always 0
  */
 char *_strcat(char *dest, char *src)
 {
 	int x = 0, i;
+	
 	while (dest[x])
 	{
 		x++;
