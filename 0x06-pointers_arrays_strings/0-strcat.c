@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * strcat - a function that concatenates two strings
@@ -21,5 +20,6 @@ char *_strcat(char *dest, char *src)
 		x++;
 	}
 	dest[x] = '\0';
+	
 	return (dest);
 }
