@@ -28,7 +28,7 @@ int pa(char *s, int r)
 	}
 	if (*s == *(s + 1))
 	{
-		return (pa(s + 1, 1 - 2));
+		return (pa(s + 1, r - 2));
 	}
 	return (0);
 }
