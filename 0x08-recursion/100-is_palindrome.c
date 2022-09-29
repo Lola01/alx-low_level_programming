@@ -9,7 +9,7 @@ int _strlen_recursion(char *s)
 {
 	if (!*s)
 	{
-		return(0);
+		return (0);
 	}
 	return (1 + _strlen_recursion(++s));
 }
@@ -32,6 +32,7 @@ int pa(char *s, int r)
 	}
 	return (0);
 }
+
 /**
  * is_palindrome - returns 1 if a string is a palindrome and 0 if not
  * @s: string
@@ -40,5 +41,6 @@ int pa(char *s, int r)
 int is_palindrome(char *s)
 {
 	int a = _strlen_recursion(s);
+
 	return (pa(s, a - 1));
 }
