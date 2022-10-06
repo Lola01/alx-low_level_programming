@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	for (a = 1; a <argc; a++)
+	for (a = 1; a < argc; a++)
 	{
 		b = b * atol(argv[a]);
 	}
