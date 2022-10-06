@@ -9,16 +9,18 @@
  */
 int main(int argc, char *argv[])
 {
-	int a, b, c;
+	int a, b;
 
-	if (argc != 3)
+	b = 1;
+	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	a = atol(argv[1]);
-	b = atol(agrv[2]);
-	c = a * b;
-	printf("%d\n", c);
+	for (a = 1; a <argc; a++)
+	{
+		b = b * atol(argv[a]);
+	}
+	printf("%d\n", b);
 	return (0);
 }
