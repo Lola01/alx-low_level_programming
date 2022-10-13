@@ -23,7 +23,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		       cmp(array[p]);
 		       if (cmp(array[p]) > 0)
 		       {
-			       x = i;
+			       x = p;
 			       break;
 		       }
 		       if (cmp (array[p]) == (-1))
