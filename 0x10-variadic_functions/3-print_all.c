@@ -17,7 +17,7 @@ void print_char(va_list arg)
 {
 	char w;
 
-	w = = va_arg(arg, int);
+	w = va_arg(arg, int);
 	printf("%c", w);
 }
 
@@ -40,6 +40,19 @@ void print_int(va_list arg)
  * Return: 0
  */
 void print_float(va_list arg)
+{
+	float x;
+
+	x = va_arg(arg, double);
+	printf("%f", x);
+}
+
+/**
+ * print_string - Prints a string.
+ * @arg: A list of arguments
+ * Return: 0
+ */
+void print_string(va_list arg)
 {
 	char *y;
 
