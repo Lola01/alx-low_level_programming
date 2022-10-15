@@ -10,20 +10,28 @@
  */
 int main(int argc, char *argv[])
 {
-	int(*oprt)(int, int);
+	int a = 0, b = 0, x = 0;
+	char s;
 
 	if (argc != 4)
 	{
 		print("Error\n");
 		exit(98);
 	}
-	oprt = get_op_func(argv[2]);
-
-	if (!oprt)
+	if (argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
+	s = argv[2][0];
+	if (s != '+' && s != '-' && != '/' && s != '*' && s != '%')
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	x = (get_op_func(argv[2]))(a, b);
+	printf("%d\n", x);
 	return (0);
 }
