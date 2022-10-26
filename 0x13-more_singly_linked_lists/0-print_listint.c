@@ -7,11 +7,10 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	int nodes = 0;
+	size_t nodes = 0;
 
-	if (h != NULL)
 	{
-		while (h)
+		while (h != NULL)
 		{
 			printf("%i\n", h->n);
 			h = h->next;
